@@ -1,7 +1,6 @@
 import React from "react";
 
-import { logos } from "../../Data";
-import { motion } from "framer-motion";
+
 
 const Home = () => {
   const container = {
@@ -52,7 +51,7 @@ const Home = () => {
         </div>
         <div className="md:w-[60%]">
           <img
-            className="w-[350px] h-[500px] md:ml-44"
+            className="md:w-[350px] md:h-[500px] w-[250px] h-[400px] mt-5 md:mt-0 md:ml-44"
             src="https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW58ZW58MHx8MHx8fDA%3D"
             alt=""
           />

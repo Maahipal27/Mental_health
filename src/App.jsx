@@ -1,13 +1,18 @@
 import Aboutus from "./components/Aboutus";
+
+import FeedBack from "./components/Feedback";
 import {
   Navbar,
   Home,
   About,
+  Contact,
+ 
   //About,
   //Teacher,
   //Contact,
   //Courses,
-  //Footer,
+  Footer,
+  Blog,
 } from "./components/index";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 //import { BrowserRouter as Router, Switch,Route, Routes,Link } from "react-router-dom";
@@ -15,6 +20,7 @@ const Layout = ({ children }) => (
   <>
     <Navbar />
     {children}
+    <Footer/>
   </>
 );
 function App() {
@@ -30,6 +36,11 @@ function App() {
             <Layout>
               <Home />
               <About/>
+              <Contact/>
+             
+             
+             
+             
             </Layout>
           }
         />
@@ -38,6 +49,30 @@ function App() {
           element={
             <Layout>
               <Aboutus />
+            </Layout>
+          }
+        />
+        <Route
+          path="/feedback"
+          element={
+            <Layout>
+              <FeedBack />
+            </Layout>
+          }
+        />
+         <Route
+          path="/interactwithus"
+          element={
+            <Layout>
+              <About/>
+            </Layout>
+          }
+        />
+        <Route
+          path="/blog"
+          element={
+            <Layout>
+              <Blog/>
             </Layout>
           }
         />

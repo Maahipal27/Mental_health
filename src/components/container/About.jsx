@@ -16,7 +16,7 @@ const About = () => {
           <p className="text-sm text-gray leading-7 mb-4">
           Our platform offers personalized mental health professionals curated specifically for women, addressing their unique needs and experiences.
           </p>
-          <button className="py-3 px-6 text-sm border border-solid border-gray rounded-lg font-bold">
+          <button className=" py-3 px-6 text-sm border border-solid border-gray rounded-lg font-bold" onClick={() => window.location.href = '/blog'}>
             Know More
           </button>
         </div>

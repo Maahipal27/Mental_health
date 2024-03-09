@@ -13,7 +13,7 @@ export const navLinks = [
   },
   {
     id: 3,
-    href: "Interact with us",
+    href: "/interactwithus",
     link: "interact with us",
   },
   {
@@ -28,7 +28,8 @@ export const navLinks = [
   },
   {
     id: 6,
-    href: "Feedback",
+    href: "/feedback",
     link: "FeedBack",
   },
 ];
+
