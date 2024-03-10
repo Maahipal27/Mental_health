@@ -1,6 +1,7 @@
 import Aboutus from "./components/Aboutus";
 
 import FeedBack from "./components/Feedback";
+import Chatbot from "./components/container/Chatbot";
 import {
   Navbar,
   Home,
@@ -35,10 +36,6 @@ function App() {
               <Home />
               <About/>
               <Contact/>
-             
-             
-             
-             
             </Layout>
           }
         />
@@ -71,6 +68,15 @@ function App() {
           element={
             <Layout>
              <Professionals/>
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/chatPage"
+          element={
+            <Layout>
+             <Chatbot/>
             </Layout>
           }
         />
