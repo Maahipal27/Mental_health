@@ -33,7 +33,7 @@ const Chatbot = () => {
     // <div className="section" id='chatPage'>
       <div className="chat-container">
         <header>
-          <h1>ChatBot</h1>
+          <h1>NutureHer Community</h1>
           <SignOut />
         </header>
 
