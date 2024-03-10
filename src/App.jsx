@@ -1,7 +1,9 @@
 import Aboutus from "./components/Aboutus";
 import FeedBack from "./components/Feedback";
-import Login from "./components/auth/login";
-import Register from "./components/auth/Register";
+import Login from "./components/auth/Login";
+import Register from "./components/auth/register";
+import Helpline from "./components/container/Helpline";
+
 
 import {
   Navbar,
@@ -33,6 +35,7 @@ function App() {
                 <Home />
                 <About />
                 <Blog/>
+                
                 <Contact />
                
               </Layout>
@@ -78,13 +81,21 @@ function App() {
               </Layout>
             }
           />
+           <Route
+            path='/helpline'
+            element={
+              <Layout>
+               <Helpline/>
+              </Layout>
+            }
+          />
           <Route path='/login' element={<Layout>
-                <Blog/>
+               <Login/>
               </Layout>} />
           <Route path='/register'
            element={
             <Layout>
-            <Register/>
+           <Register/>
           </Layout>
            } 
            />

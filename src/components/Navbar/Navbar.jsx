@@ -42,8 +42,11 @@ const Navbar = () => {
               return <NavLink key={navLink.id} to={navLink.href} className="mr-8">{navLink.link}</NavLink>;
             })}
           </div>
-          <button className="py-3 px-6 font-bold text-sm border border-solid rounded-lg border-gray" onClick={() => window.location.href = '/register'}>
+          <button className="py-2 px-5  text-xs md:py-3 md:px-5 font-bold md:text-sm border border-solid rounded-lg border-gray" onClick={() => window.location.href = '/register'}>
             Sign Up
+          </button>
+          <button className=" py-2 px-5  md:py-3 md:px-5 font-bold text-xs md:text-sm border border-solid rounded-lg border-gray" onClick={() => window.location.href = '/login'}>
+            Sign in
           </button>
           {toggle && (
             <motion.div
