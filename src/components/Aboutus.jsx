@@ -5,8 +5,8 @@ const About = () => {
 
 <div className=" bg-white flex-col flex  md:flex-row justify-between items-center h-full py-5 ">
       
-      <img src="https://media.istockphoto.com/id/1475943359/photo/photo-of-happy-girl-making-demonstrating-heart-on-chest-on-orange-background-stock-photo.jpg?s=2048x2048&w=is&k=20&c=CaXLbjbh2xVGlpN-ZOKk0dSckGzQAplr14ZaBd94mVA=" 
-      className="flex flex-row mt-20 md:ml-16 px-10 py-14 w-[350px] h-[350px] md:w-[600px] md:h-[600px] " />
+      <img src="./images/courses8.jpg" 
+      className="flex flex-row mt-20 md:ml-16 px-10 py-14 w-[350px] h-[350px] md:w-[500px] md:h-[500px] " />
       <div className="mt-20" >
        
         <div className="md:w-[50%] md:ml-64">

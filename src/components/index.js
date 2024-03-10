@@ -4,5 +4,5 @@ import Professionals from "./container/Professionals";
 import Contact from "./container/Contact";
 import Footer from "./container/Footer";
 import Navbar from "./Navbar/Navbar";
-
-export { Navbar, Home, About,Contact,Professionals,Footer };
+import Blog from "./container/Blog";
+export { Navbar, Home, About,Contact,Professionals,Blog,Footer };

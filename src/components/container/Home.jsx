@@ -41,12 +41,13 @@ const Home = () => {
             resilience, and mental well-being.
           </p>
           <div className="mt-6">
-            {/* <button className="px-6 py-3 font-bold text-white bg-Teal rounded-lg mr-4 text-sm">
-              Read more
-            </button> */}
-            <button className="px-6 py-3 font-bold border border-solid text-white bg-Teal rounded-lg text-sm">
+          <button className="px-6 py-3 font-bold text-sm rounded-lg mr-4 bg-slate-300 border-black">
+              Get Help
+            </button>
+            <button className="px-6 py-3 font-bold border border-solid text-white bg-Teal rounded-lg text-sm " onClick={() => window.location.href = '/blogs'}>
             Read more
             </button>
+            
           </div>
         </div>
         <div className="md:w-[60%]">
