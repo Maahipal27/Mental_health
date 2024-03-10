@@ -6,24 +6,12 @@ import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 import 'firebase/compat/analytics';
 import './Chatbot.css'
-
+import {auth,firestore,analytics} from "../../App"
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-firebase.initializeApp({
-  apiKey: "AIzaSyAkOYrlPiFk12hS-l6lp47roFZmN1j7jyI",
-  authDomain: "chating-9c418.firebaseapp.com",
-  databaseURL: "https://chating-9c418-default-rtdb.firebaseio.com",
-  projectId: "chating-9c418",
-  storageBucket: "chating-9c418.appspot.com",
-  messagingSenderId: "923207017401",
-  appId: "1:923207017401:web:d415c2d34b784d95efcc68",
-  measurementId: "G-0H51CL174D"
-})
 
-const auth = firebase.auth();
-const firestore = firebase.firestore();
-const analytics = firebase.analytics();
+
 
 const Chatbot = () => {
 

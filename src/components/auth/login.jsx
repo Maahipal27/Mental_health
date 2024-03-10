@@ -41,10 +41,10 @@
 
 // export default Login;
 
-
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase";
+
+import { auth } from "../../App";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -64,10 +64,16 @@ const Login = () => {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <form onSubmit={signIn} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <form
+        onSubmit={signIn}
+        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+      >
         <h1 className="text-2xl font-bold mb-4">Log In to your Account</h1>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="email"
+          >
             Email
           </label>
           <input
@@ -81,7 +87,10 @@ const Login = () => {
           />
         </div>
         <div className="mb-6">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="password"
+          >
             Password
           </label>
           <input

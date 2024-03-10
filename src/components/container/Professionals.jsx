@@ -137,14 +137,14 @@ const Professionals = () => {
             <h1 className="text-center pt-32 font-bold text-5xl py-8">Professionals</h1>
             <div className="container mx-auto flex flex-wrap justify-center">
                 {professionals.map((professional, index) => (
-                    <div key={index} className="profile w-80 bg-white rounded-lg shadow-md p-6 m-4">
+                    <div key={index} className="profile w-80 bg-white text-black rounded-lg shadow-md p-6 m-4">
                         <img src={`images/${professional.image}`} alt={professional.name} className="w-20 h-20 rounded-full mr-4 border-4 border-white hover:scale-110 transition-transform"  />
-                        <div className="details">
+                        <div className="details ">
                             <h2 className="text-xl font-bold">{professional.name}</h2>
-                            <p><b>Hospital:</b> {professional.hospital}</p>
-                            <p><b>Place :</b> {professional.place}</p>
-                            <p><b>Experience :</b> {professional.experience}</p>
-                            <p><b>Rating :</b> {professional.rating}</p>
+                            <p className='text-black'><b>Hospital:</b> {professional.hospital}</p>
+                            <p className='text-black'><b>Place :</b> {professional.place}</p>
+                            <p className='text-black'><b>Experience :</b> {professional.experience}</p>
+                            <p className='text-black'><b>Rating :</b> {professional.rating}</p>
                             <div className="buttons mt-4">
                                 <button onClick={() => callOrWhatsApp(professional.phone)} className="phone px-4 py-2 mr-2 bg-teal-500 text-white rounded hover:bg-turquoise-500 transition-colors">Call / WhatsApp</button>
                                 <button onClick={() => sendEmail(professional.email)} className="email px-4 py-2 bg-teal-500 text-white rounded hover:bg-turquoise-500 transition-colors">Email</button>
