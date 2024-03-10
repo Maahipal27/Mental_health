@@ -42,7 +42,7 @@ const Navbar = () => {
               return <NavLink key={navLink.id} to={navLink.href} className="mr-8">{navLink.link}</NavLink>;
             })}
           </div>
-          <button className="py-3 px-6 font-bold text-sm border border-solid rounded-lg border-gray">
+          <button className="py-3 px-6 font-bold text-sm border border-solid rounded-lg border-gray" onClick={() => window.location.href = '/register'}>
             Sign Up
           </button>
           {toggle && (
