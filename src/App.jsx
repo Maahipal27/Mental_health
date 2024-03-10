@@ -7,15 +7,13 @@ import {
   About,
   Contact,
  
-  //About,
-  //Teacher,
-  //Contact,
-  //Courses,
+  
   Footer,
-  Blog,
+
+  Professionals,
 } from "./components/index";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-//import { BrowserRouter as Router, Switch,Route, Routes,Link } from "react-router-dom";
+
 const Layout = ({ children }) => (
   <>
     <Navbar />
@@ -69,10 +67,10 @@ function App() {
           }
         />
         <Route
-          path="/blog"
+          path="/professionals"
           element={
             <Layout>
-              <Blog/>
+             <Professionals/>
             </Layout>
           }
         />
@@ -80,11 +78,7 @@ function App() {
       </Routes>
     </Router>
       
-      {/* <About />
-      <Courses />
-      <Teacher />
-      <Contact />
-      <Footer /> */}
+     
     </div>
   );
 }
