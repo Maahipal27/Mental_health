@@ -4,6 +4,10 @@ import Login from "./components/auth/Login";
 import Register from "./components/auth/register";
 import Helpline from "./components/container/Helpline";
 
+import Login from "./components/auth/Login";
+import Register from "./components/auth/register";
+import Helpline from "./components/container/Helpline";
+
 
 import {
   Navbar,
@@ -35,6 +39,7 @@ function App() {
                 <Home />
                 <About />
                 <Blog/>
+                
                 
                 <Contact />
                
@@ -89,12 +94,22 @@ function App() {
               </Layout>
             }
           />
+           <Route
+            path='/helpline'
+            element={
+              <Layout>
+               <Helpline/>
+              </Layout>
+            }
+          />
           <Route path='/login' element={<Layout>
+               <Login/>
                <Login/>
               </Layout>} />
           <Route path='/register'
            element={
             <Layout>
+           <Register/>
            <Register/>
           </Layout>
            } 
