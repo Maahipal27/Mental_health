@@ -52,10 +52,3 @@ This project aims to create a digital platform offering tailored mental health r
 
 - **Chatbot Integration:**
   - Dialogflow for implementing the chatbot assistant.
-
-## Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/mental-health-platform.git
