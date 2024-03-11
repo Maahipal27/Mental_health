@@ -22,6 +22,7 @@ import {
   Blog,
 } from "./components/index";
 import DialogflowChatbot from "./components/container/DialogflowChatbot";
+import Analytics from "./components/container/Analytics";
 
 firebase.initializeApp({
   apiKey: "AIzaSyAkOYrlPiFk12hS-l6lp47roFZmN1j7jyI",
@@ -56,6 +57,7 @@ function App() {
               <Layout>
                 <Home />
                 <About />
+                <Analytics/>
                 <Contact />
               </Layout>
             }
