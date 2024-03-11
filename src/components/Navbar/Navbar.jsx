@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import { navLinks } from "../../Data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 
-
+import { useNavigate } from "react-router-dom";
 
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 const Navbar = () => {
+  const navigate=useNavigate();
   const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState(null);
   useEffect(() => {
@@ -42,10 +43,10 @@ const Navbar = () => {
               return <NavLink key={navLink.id} to={navLink.href} className="mr-8">{navLink.link}</NavLink>;
             })}
           </div>
-          <button className="py-2 px-5  text-xs md:py-3 md:px-5 font-bold md:text-sm border border-solid rounded-lg border-gray" onClick={() => window.location.href = '/register'}>
+          <button className="py-2 px-5  text-xs md:py-3 md:px-5 font-bold md:text-sm border border-solid rounded-lg border-gray" onClick={() => navigate('/register')}>
             Sign Up
           </button>
-          <button className=" py-2 px-5  md:py-3 md:px-5 font-bold text-xs md:text-sm border border-solid rounded-lg border-gray" onClick={() => window.location.href = '/login'}>
+          <button className=" py-2 px-5  md:py-3 md:px-5 font-bold text-xs md:text-sm border border-solid rounded-lg border-gray" onClick={() => navigate('/login')}>
             Sign in
           </button>
           {toggle && (

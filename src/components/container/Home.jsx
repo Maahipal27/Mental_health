@@ -1,8 +1,8 @@
 import React from "react";
-
-
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate=useNavigate();
   const container = {
     hidden: {
       opacity: 0,
@@ -41,10 +41,10 @@ const Home = () => {
             resilience, and mental well-being.
           </p>
           <div className="mt-6">
-          <button className="px-6 py-3 font-bold text-sm rounded-lg mr-4 bg-slate-300 border-black" onClick={() => window.location.href = '/helpline'} >
+          <button className="px-6 py-3 font-bold text-sm rounded-lg mr-4 bg-slate-300 border-black" onClick={() =>  navigate( '/helpline')} >
               Get Help
             </button>
-            <button className="px-6 py-3 font-bold border border-solid text-white bg-Teal rounded-lg text-sm " onClick={() => window.location.href = '/blogs'}>
+            <button className="px-6 py-3 font-bold border border-solid text-white bg-Teal rounded-lg text-sm " onClick={() =>  navigate( '/blogs')}>
             Read more
             </button>
             
@@ -52,7 +52,7 @@ const Home = () => {
         </div>
         <div className="md:w-[60%]">
           <img
-            className="md:w-[350px] md:h-[500px] w-[250px] h-[400px] mt-5 md:mt-0 md:ml-44"
+            className="md:w-[350px] md:h-[500px] w-[350px] h-[500px] mt-5 md:mt-0 md:ml-44"
             src="https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW58ZW58MHx8MHx8fDA%3D"
             alt=""
           />

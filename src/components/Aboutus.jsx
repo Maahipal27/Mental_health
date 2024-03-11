@@ -11,7 +11,7 @@ const About = () => {
        
         <div className="md:w-[50%] md:ml-64">
         <p className="text-black  md:text-sm py-3  font-sans ">
-        <span className="text-Teal">Common Problems We Address:</span>
+        <span className="text-Teal  font-bold text-xl">Common Problems We Address:</span>
             <br />
             - Postpartum Challenges: We understand the unique mental health struggles women face during the postpartum period, and our platform offers specialized resources to support new mothers.
             <br />
@@ -22,7 +22,7 @@ const About = () => {
             
           </p>
           <p className="text-black  md:text-sm py-3 font-sans ">
-        <span className="text-Teal">Features We Offer:</span>
+        <span className="text-Teal font-bold  text-xl">Features We Offer:</span>
             <br />
             - Tailored Resources: Our platform offers personalized mental health resources curated specifically for women, addressing their unique needs and experiences.
             <br />

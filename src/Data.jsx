@@ -6,16 +6,12 @@ import { MdOutlineScience } from "react-icons/md";
 import postpartum from "./assets/postpartum.png";
 import depression from "./assets/depression.jpeg";
 import phobia from "./assets/phobia.jpg";
-//import courses1 from "./assets/courses1.jpg";
-//import courses2 from "./assets/courses2.jpg";
-//import courses3 from "./assets/courses3.jpg";
-//import courses4 from "./assets/courses4.jpg";
-//import courses5 from "./assets/courses5.jpg";
+
 
 import workplacestress from "./assets/workplaceStress.jpeg";
 import domesticviolence from "./assets/domesticvoilence.jpeg";
 
-export const courses = [
+export const blogData = [
   {
     id: 1,
     image: postpartum,
@@ -69,7 +65,7 @@ export const navLinks = [
   {
     id: 3,
     href: "/interactwithus",
-    link: "interact with us",
+    link: "Interact with us",
   },
   {
     id: 4,
