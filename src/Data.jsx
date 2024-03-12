@@ -74,7 +74,7 @@ export const navLinks = [
   },
   {
     id: 5,
-    href: "/chatPage",
+    href: "ChatBot",
     link: "ChatBot",
   },
   {
